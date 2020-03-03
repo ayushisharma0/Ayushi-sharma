@@ -1,0 +1,147 @@
+<html>
+<head>
+<title> web page</title>
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: LightGray;
+}
+
+.active {
+  background-color: LightGray;
+}
+</style>
+<body bgcolor="LightGray">
+
+<ul>
+  <li><a href="">HomePage</a></li>
+  <li><a href="">Building</a></li>
+  <li><a href="">Buying</a></li>
+  <li><a href="">Solution</a></li>
+<li><a href="">About us</a></li>
+</ul><br>
+<img src="ABHI.png" alt="home" style="width:1300px; height:600px;">
+<h2 style="color:green; font-size:300%;"> Home  Offer</h2>
+ <div class="imgcontainer">
+    <img src="C:\Users\student\Desktop\home.gif"  alt="Avatar" class="avatar"  align="right" style="width:350px; height:350px; >
+  </div>
+</body>
+</html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: left;
+  margin: 22px 0 10px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+
+.container {
+  padding: 14px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 11px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 50%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="ABHI.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+
+</form>
+
+</body>
+</html>
